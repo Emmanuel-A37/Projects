@@ -1,8 +1,0 @@
-def myfunction(x,y):
-    x = x * 4
-    print(x)
-    return x[y]
-
-
-stuff = myfunction("testing",4)
-print(stuff)
