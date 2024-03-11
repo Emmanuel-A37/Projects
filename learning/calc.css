@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+#screen{
+    width: 40%;
+    min-width: 13rem;
+    height: 15%;
+    background-color: white;
+    color: black;
+    top: 0;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+#zero{
+    grid-area: zero;
+}
+
+#one{
+    grid-area: one;
+}
+
+#two{
+    grid-area: two;
+}
+
+#three{
+    grid-area: three;
+}
+
+#four{
+    grid-area: four;
+}
+
+#five{
+    grid-area: five;
+}
+
+#six{
+    grid-area: six;
+}
+
+#seven{
+    grid-area: seven;
+}
+
+#eight{
+    grid-area: eight;
+}
+
+#nine{
+    grid-area: nine;
+}
+
+#plus{
+    grid-area: plus;
+    color: green;
+}
+
+#divide{
+    grid-area: divide;
+    color: green;
+}
+
+#minus{
+    grid-area: minus;
+    color: green;
+}
+
+#times{
+    grid-area: times;
+    color: green;
+}
+
+#point{
+    grid-area: point;
+}
+
+#clear{
+    grid-area: clear;
+    color: red;
+}
+
+#delete{
+    grid-area: delete;
+    color: green;
+}
+
+#equal{
+    grid-area: equal;
+    color: green;
+}
+
+#modulus{
+    grid-area: modulus;
+    color: green;
+}
+#exponent{
+    grid-area: exponent;
+    color: green;
+}
+
+#calc{
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin: 0;
+    bottom: 0;
+    width: 50%;
+
+    height: 80%;  
+    display: grid;
+    grid-template-areas:
+    "clear exponent modulus divide"
+    "seven eight nine times"
+    "four five six minus"
+    "one two three plus"
+    "delete zero point equal";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
+    place-items: center; 
+}
+button{
+    background-color: linear-gradient(60deg,rgb(130, 80, 20),rgb(211, 147, 8));
+    color : white;
+    text-align: center;
+    border-radius: 10%;
+    padding: 40px;
+    font-size : 30px;
+
+}
+button:hover {
+    background-color: #555;
+}
+
+button:active {
+    background-color: #777;
+}
+

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="/learning/snake.css">
+    <script src="https://kit.fontawesome.com/6e4e6317ce.js" crossorigin="anonymous"></script>
+   <!-- defer used instead of putting it at the end of the document-->
+</head>
+<body>
+    <div id="container">
+        <h1>Snake Game</h1>
+        <div id="game_details">
+            <div>Score : <span id="score">0</span></div>
+            <div>Highscore : <span id="high_score">0</span></div>
+        </div>
+        <div id="game_board"></div>
+        <div class="controls">
+            <i data-key="ArrowRight" class="fa-sharp fa-solid fa-arrow-right"></i>
+            <i data-key="ArrowUp" class=" fa-sharp fa-solid fa-arrow-up"></i>
+            <i data-key="ArrowLeft" class="fa-sharp fa-solid fa-arrow-left"></i>
+            <i data-key="ArrowDown" class="fa-sharp fa-solid fa-arrow-down"></i>
+        </div>
+    </div>
+    <script src="/learning/snake.js" ></script>    
+</body>
+</html>
